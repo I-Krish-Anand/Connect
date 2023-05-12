@@ -1,0 +1,361 @@
+/* Set the font family to 'Inter' */
+body {
+	font-family: 'Inter', sans-serif;
+}
+
+label {
+	text-align: left;
+}
+/* Style the header */
+h2.question {
+	font-size: 2.5rem;
+	margin-top: 3rem;
+	margin-bottom: 1.5rem;
+	text-align: center;
+}
+
+/* Style the arrows */
+.arrow.button {
+	color: beige;
+	margin-top: 7rem;
+	background-color: #000000;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	cursor: pointer;
+	padding: 10px;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.arrow.button:hover {
+	background-color: #f9f9f9;
+}
+
+.arrow.button:active {
+	background-color: #eee;
+}
+
+#right {
+	position: fixed;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+}
+
+/* Style the footer */
+.footer {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 2rem;
+}
+
+/* Style the buttons */
+.button {
+	padding: 1rem 2rem;
+	background-color: #3498db;
+	border: none;
+	color: white;
+	font-weight: bold;
+	border-radius: 0.3rem;
+	transition: background-color 0.3s ease;
+}
+
+.button:hover {
+	background-color: #2980b9;
+}
+
+/* Style the questions setup form */
+#QuestionsSetup {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#QuestionsSetup h3 {
+	font-size: 2rem;
+	margin-top: 3rem;
+}
+
+#QuestionsSetup label {
+	font-size: 1.2rem;
+	display: block;
+	margin-top: 2rem;
+}
+
+#QuestionsSetup input[type=text], #QuestionsSetup select {
+	padding: 0.8rem;
+	font-size: 1.2rem;
+	border: none;
+	border-bottom: 2px solid #555;
+	width: 100%;
+	margin-bottom: 2rem;
+}
+
+#QuestionsSetup button {
+	padding: 1rem 2rem;
+	background-color: #3498db;
+	border: none;
+	color: white;
+	font-weight: bold;
+	border-radius: 0.3rem;
+	transition: background-color 0.3s ease;
+}
+
+#QuestionsSetup button:hover {
+	background-color: #2980b9;
+}
+
+/* Style the status message */
+#status {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #27ae60;
+	color: white;
+	padding: 0.5rem;
+	font-size: 1.2rem;
+	font-weight: bold;
+	border-radius: 0 0 0 1rem;
+}
+
+/* Responsive design */
+@media ( max-width : 768px) {
+	#QuestionsSetup {
+		width: 80%;
+	}
+}
+
+@media ( max-width : 576px) {
+	#QuestionsSetup {
+		width: 90%;
+	}
+}
+
+/* Center the question text and arrows */
+
+/* Style for the arrows */
+
+/* Footer styles */
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.5);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px;
+}
+
+#label1, #label2, #label3 {
+	display: block !important;
+	margin-bottom: 10px !important;
+	font-size: 16px !important;
+	color: #333 !important;
+	cursor: pointer !important;
+}
+
+.radio-buttons input[type="radio"] {
+	display: none !important;
+}
+
+.radio-buttons input[type="radio"]+label:before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 18px;
+	height: 18px;
+	margin-right: 10px;
+	border: 2px solid #ccc;
+	border-radius: 50%;
+	background-color: #fff;
+}
+
+.radio-buttons input[type="radio"]:checked+label:before {
+	background-color: #f00;
+}
+
+/* Button styles */
+.button {
+	padding: 1rem 2rem;
+	background-color: #000000;
+	border: none;
+	color: white;
+	font-weight: bold;
+	border-radius: 0.3rem;
+	transition: background-color 0.3s ease;
+}
+
+/* Button hover styles */
+.button:hover {
+	background-color: #c0c0c0;
+}
+
+/* Style for the options container */
+
+/* Style for the selected option */
+.options input[type="radio"]:checked+label {
+	background-color: #007bff;
+	color: #fff;
+	border-color: #007bff;
+}
+
+.arrow {
+	background-color: transparent;
+	border: none;
+	color: #333;
+	cursor: pointer;
+	outline: none;
+	transition: all 0.2s ease;
+}
+
+.arrow:hover {
+	color: #666;
+}
+
+.left-arrow {
+	font-size: 24px;
+}
+
+.right-arrow {
+	font-size: 24px;
+	margin-top: 10rem;
+}
+
+input[type="radio"] {
+	display: block;
+}
+
+label {
+	background-color: #eee;
+	border-radius: 10%;
+	color: #333;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.2rem;
+	height: auto;
+	width: auto;
+	transition: all 0.2s ease;
+}
+
+.match-alert {
+	display: none;
+	/* Other styles */
+}
+
+label:hover {
+	background-color: #ddd;
+}
+
+input[type="radio"]:checked+label {
+	background-color: #333;
+	color: #fff;
+}
+
+.match-alert {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 40px 30px;
+	box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.3);
+	font-family: Arial, sans-serif;
+	text-align: center;
+	color: #333;
+	z-index: 9999;
+}
+
+.match-alert-header {
+	font-size: 2.4rem;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.match-alert-message {
+	font-size: 1.8rem;
+	margin-bottom: 20px;
+}
+
+.match-alert-header:before {
+	content: "\f00c";
+	font-family: FontAwesome;
+	font-size: 3rem;
+	display: block;
+	margin: 0 auto 20px;
+	color: #0FBF6B;
+}
+
+.match-alert-close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 1.6rem;
+	color: #666;
+	cursor: pointer;
+	transition: color 0.3s ease-in-out;
+}
+
+.match-alert-close:hover {
+	color: #333;
+}
+
+@media only screen and (max-width: 600px) {
+	.match-alert {
+		width: 80%;
+		padding: 20px;
+	}
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin: 20px 0;
+	font-family: Arial, sans-serif;
+}
+
+th, td {
+	padding: 12px 15px;
+	text-align: left;
+}
+
+th {
+	background-color: #333;
+	color: #fff;
+	font-size: 18px;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+tr:hover {
+	background-color: #ddd;
+}
+
+svg {
+	margin-right: 10px;
+}
+
+td:first-child {
+	width: 50px;
+}
+
+td:nth-child(2) {
+	display: flex;
+	align-items: center;
+}
+
+h6 {
+	margin: 0;
+	font-size: 18px;
+	color: #333;
+}
+
+p {
+	margin: 0;
+	font-size: 16px;
+	color: #666;
+}
